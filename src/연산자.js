@@ -48,7 +48,7 @@ let productList = [
 ];
 let inputCoin = 800;
 let outputList = []; // 빈 배열 생성
-for(let i = 0; i < productList,length; i++) {
+for(let i = 0; i < productList.length; i++) {
     if(productList[i].price <= inputCoin) {
         outputList.push(productList[i]); // 배열의 마지막에 새로운 요소 추가
     }
