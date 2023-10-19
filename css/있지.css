@@ -1,0 +1,27 @@
+.item {
+    position: relative;
+    padding: 15px 20px;
+    margin: auto;
+    width: 500px;
+    height: auto;
+}
+
+.over {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+
+button {
+    background-color: rgba(255,255,255,0.7);
+    border: 1px solid white;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+.detail {
+    width: 400px;
+    text-align: left;
+    line-height: 1.8em;
+    display: none;
+}

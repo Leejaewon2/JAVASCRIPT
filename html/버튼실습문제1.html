@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            text-align: center;
+            align-content: center;
+        }
+        .grnbutton > button {
+            display: flex;
+            width: 80px;
+            background-color: green;
+            border-color: green;
+            border-radius: 0px;
+        }
+        .ornbutton > button {
+            width: 80px;
+            display: flex;
+
+            background-color: orange;
+            border-color: orange;
+            border-radius: 0px;
+        }
+        .purbutton > button {
+            width: 80px;
+            display: flex;
+            background-color: purple;
+            border-color: purple;
+            border-radius: 0px;
+        }
+        .section {
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            text-align: center;
+            align-content: center;
+            margin-top: 10px;
+            border-color: white;
+        }
+        #click-Event {
+            border-color: white;
+            width: 245px;
+            height: 100px;
+            background-color: orange;
+        }
+    
+  
+    </style>
+   
+</head>
+<body>
+    <div class="header">
+        <div class="grnbutton">
+            <button onclick="button1()">green</button>
+        </div>
+
+        <div class="ornbutton">
+            <button onclick="button2()">orange</button>
+        </div>
+
+        <div class="purbutton">
+            <button onclick="button3()">purple</button>
+        </div>
+    </div>
+    <div class="section">
+        <button id="click-Event" onclick="button4()">클릭시 배경색 변경</button>
+    </div>
+    <script>
+        function button1() {
+            alert("초록색입니다.")
+        }
+        function button2() {
+            alert("주황색입니다.")
+        }
+        function button3() {
+            alert("보라색입니다.")
+        }
+        function button4() {
+            const clickEvent = document.querySelector("#click-Event")
+            clickEvent.style.backgroundColor = "blue";
+        }
+    </script>
+</body>
+</html>
